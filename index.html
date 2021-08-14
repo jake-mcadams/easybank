@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/style.css">
+  
+  <title>Frontend Mentor | Easybank landing page</title>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-log">
+      <img src="/images/logoheader.svg" alt="">
+    </div>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="#" class="nav-links">Home</a></li>
+        <li><a href="#" class="nav-links">About</a></li>
+        <li><a href="#" class="nav-links">Contact</a></li>
+        <li><a href="#" class="nav-links">Blog</a></li>
+        <li><a href="#" class="nav-links">Careers</a></li>
+      </ul>
+
+      
+    </div>
+  
+      <div class="request-button">
+        <button id="visit" class="request-invite-button">
+          Request Invite
+        </button>
+      </div>
+
+      <!-- Trigger/Open The Modal -->
+      <div class="hamburger">
+        <img src="/images/icon-hamburger.svg" id="hamburger" alt="">
+
+      </div>
+
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <ul class="hamburger-ul">
+            <li><a class="hamburger-link" href="">Home</a></li>
+            <li><a class="hamburger-link" href="">About</a></li>
+            <li><a class="hamburger-link" href="">Contact</a></li>
+            <li><a class="hamburger-link" href="">Blog</a></li>
+            <li><a class="hamburger-link" href="">Careers</a></li>
+          </ul>
+        </div>
+      
+      </div>
+  </header>
+
+
+
+  <main>
+    <div class="next-gen-container">
+      <div class="sales-generation-container">
+        <div class="gen-header">
+          Next generation <br>digital banking
+
+        </div>
+        <div class="gen-body">
+          Take your financial life online. Your Easybank account will be a one-stop-shop 
+          for spending, saving, budgeting, investing, and much more.
+        </div>
+      
+        <div class="gen-button">
+          <button class="request-invite-button">
+            Request Invite
+          </button>
+          <img src="#" alt="">
+          <img src="#" alt="">
+      </div>
+      </div>
+      <div class="image">
+        <img id="phones" src="/images/image-mockups.png" alt="">
+      </div>
+    </div>
+  
+  
+  
+    <div class="choose-easybank-container">
+      <div class="choose-sales">
+          <div class="sales-header">
+            Why choose Easybank?
+          </div>
+  
+          <div class="sales-body">
+            We leverage Open Banking to turn your bank account into your financial hub.<br> Control 
+            your finances like never before.
+          </div>
+      </div>
+    
+      <div class="choose-grid">
+        <div class="perks-container">
+          <div class="bottom-grid card" id="online-banking">
+            <div class="card-image">
+              <img src="/images/icon-online.svg" alt="">
+            </div>
+            <div class="card-header">
+              Online Banking
+            </div>
+            <div class="card-body">
+              Our modern web and mobile applications allow you to keep track of your finances 
+              wherever you are in the world.
+            </div>
+          </div>
+        
+          <div class="bottom-grid card" id="simple-budgeting">
+            <div class="card-image">
+              <img src="/images/icon-budgeting.svg" alt="">
+            </div>
+            <div class="card-header">
+              Simple Budgeting
+            </div>
+            <div class="card-body">
+              See exactly where your money goes each month. Receive notifications when you’re 
+              close to hitting your limits.
+            </div>
+          </div>
+        
+          <div class="bottom-grid card" id="fast-onboarding">
+            <div class="card-image">
+              <img src="/images/icon-onboarding.svg" alt="">
+            </div>
+            <div class="card-header">
+              Fast Onboarding
+            </div>
+            <div class="card-body">
+              We don’t do branches. Open your account in minutes online and start taking control 
+              of your finances right away.
+            </div>
+          </div>
+        
+          <div class="bottom-grid card" id="open-api">
+            <div class="card-image">
+              <img src="/images/icon-api.svg" alt="">
+            </div>
+            <div class="card-header">
+              Open API
+            </div>
+            <div class="card-body">
+              Manage your savings, investments, pension, and much more from one account. Tracking 
+              your money has never been easier.
+            </div>
+        </div>
+      </div>
+
+      </div>
+    </div>  
+    <div class="test-container">
+      <div class="latest-headline">
+        Latest Articles
+      </div>
+      <div class="latest-article-container">
+
+        <article class="latest-articles" id="article-one">
+          <!-- <div class="latest-image" id="image-one"> -->
+            <img src="/images/image-currency.jpg" class="article-image" alt="">
+          <!-- </div> -->
+          <div class="article">
+            <div class="article-text-container">
+              <div class="author">
+                By Claire Robinson
+              </div>
+              <div class="title">
+                Receive money in any currency with no fees
+              </div>
+              <div class="article-body">
+                The world is getting smaller and we’re becoming more mobile. So why should you be 
+                forced to only receive money in a single …
+              </div>
+            </div>
+          </div>
+        </article>
+        
+  
+       
+        <article class="latest-articles" id="article-two">
+          <!-- <div class="latest-image" id="image-two"> -->
+            <img src="/images/image-restaurant.jpg" class="article-image" alt="">
+          <!-- </div> -->
+        
+          <div class="article">
+            <div class="article-text-container">
+              <div class="author">
+                By Wilson Hutton
+              </div>
+              <div class="title">
+                Treat yourself without worrying about money
+              </div>
+              <div class="article-body">
+                Our simple budgeting feature allows you to separate out your spending and set 
+                realistic limits each month. That means you …
+              </div>
+            </div>
+          </div>
+        </article>
+        
+  
+        
+        <article class="latest-articles" id="article-three">
+          <!-- <div class="latest-image" id="image-three"> -->
+            <img src="/images/image-plane.jpg" class="article-image" alt="">
+          <!-- </div> -->
+        
+          <div class="article">
+            <div class="article-text-container">
+              <div class="author">
+                By Wilson Hutton
+              </div>
+              <div class="title">
+                Take your Easybank card wherever you go
+              </div>
+              <div class="article-body">
+                We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+                while you’re abroad. We’ll even show you …
+              </div>
+            </div>
+          </div>
+        </article>
+       
+  
+        
+        <article class="latest-articles" id="article-four">
+          <!-- <div class="latest-image" id="image-four"> -->
+            <img src="/images/image-confetti.jpg" class="article-image" alt="">
+          <!-- </div> -->
+        
+          <div class="article">
+            <div class="article-text-container">
+              <div class="author">
+                By Claire Robinson
+              </div>
+              <div class="title">
+                Our invite-only Beta accounts are now live!
+              </div>
+              <div class="article-body">
+                After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+                It’s easy to request an invite through the site ...
+              </div>
+            </div>
+          </div>
+        </article>
+       
+      </div>
+    </div>
+    </div>
+  </main>
+
+  
+
+  <footer>
+    <div class="footer-content-container">
+      <div class="footer-images">
+        <div class="footer-log">
+          <img src="/images/logofooter.svg" class="logo-img" alt="">
+        </div>
+        <div class="footer-media">
+          <img src="/images/icon-facebook.svg" class="media" alt="">
+          <img src="/images/icon-youtube.svg" class="media" alt="">
+          <img src="/images/icon-twitter.svg" class="media" alt="">
+          <img src="/images/icon-pinterest.svg" class="media"  alt="">
+          <img src="/images/icon-instagram.svg" class="media" alt="">
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="" class="footer-link">About Us</a>
+        <a href="" class="footer-link">Contact</a>
+        <a href="" class="footer-link">Blog</a>
+      </div>
+      <div class="footer-links">
+        <a href="" class="footer-link">Careers</a>
+        <a href="" class="footer-link">Support</a>
+        <a href="" class="footer-link">Privacy Policy</a>
+      </div>
+      <div class="button-copy">
+        <button class="request-invite-button">
+          Request Invite
+        </button>
+        <div class="copy--write">
+          © Easybank. All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>

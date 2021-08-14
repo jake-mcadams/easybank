@@ -1,0 +1,28 @@
+@import './header';
+@import './genration';
+@import './variables';
+@import './choose';
+@import './articles';
+@import './footer';
+
+*{
+    font-size: 18px;
+    font-family: $Public;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.request-invite-button{
+    color:$white;
+    background-image: linear-gradient(to right, $limeGreen, $brightCyan);
+    border: none;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    border-radius: 2rem;
+    width: fit-content;
+
+    &:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+}

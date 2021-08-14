@@ -1,0 +1,81 @@
+@mixin removePadding {
+    transition: all 1s;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+@mixin addPadding {
+    padding-left: 150px;
+    padding-right: 150px;
+    transition: padding-left 1s;
+}
+
+.choose-easybank-container{
+    background-color: $lightGrayishBlue;
+    display: flex;
+    flex-direction: column;
+    // grid-template-rows: 120px repeat(2, 1fr) 120px;
+    gap: 50px
+    ;
+    // padding-left: 150px;
+    // padding-right: 150px;
+    // transition: padding-left 1s;
+    @include addPadding();
+}
+
+
+.choose-sales{
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.sales-header{
+    font-size: 48px;
+}
+
+.sales-body{
+    color: $grayishBlue;
+}
+
+.perks-container{
+    grid-row:3/4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    transition: all .5s;
+}
+
+.card-header{
+    font-size: 28px;
+}
+
+.card-body{
+    color: $grayishBlue;
+}
+
+
+@media (max-device-width: 700px){
+    .card{
+        transition: all 1s;
+        gap: 20px;
+    }
+}
+
+@media (max-device-width: 420px){
+    .choose-easybank-container{
+        // transition: all 1s;
+        // padding-left: 50px;
+        @include removePadding();
+    }
+}
